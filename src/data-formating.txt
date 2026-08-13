@@ -1,0 +1,29 @@
+type Account @table {
+    username: String! 
+    passwordHash: String! 
+    accountType: String! 
+    patient: Patient 
+    provider: Provider 
+} type Patient @table { 
+    prefix: String 
+    firstName: String! 
+    middleName: String 
+    lastName: String! 
+    suffix: String 
+    email: String! 
+    phone: String! 
+    metadata: String 
+} type Provider @table { 
+    name: String! 
+    phone: String! 
+    contactEmail: String 
+    account: Account 
+} type Appointment @table { 
+    dayAndTime: String! 
+    yearAndMonth: String! 
+    reason: String! 
+    notes: String 
+    patient: Patient! 
+    provider: Provider! 
+    account: Account! 
+}

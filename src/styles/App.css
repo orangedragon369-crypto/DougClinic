@@ -1,0 +1,88 @@
+body, #root {
+  height: 100vh;
+  margin: 0;
+  background: #8a9a5b;
+}
+
+header {
+  background: url("");
+  height: 35vh;
+}
+
+main {
+  min-height: 55vh;
+}
+
+footer {
+  min-height: 10vh;
+  bottom: 0;
+}
+
+footer, .second {
+  background: #228B22;
+}
+
+footer, .second, .between {
+  justify-content: space-between;
+}
+
+footer, .second, nav, .no-margin {
+  margin: 0;
+  padding: 10px;
+}
+
+.column, .row, body {
+  display: flex;
+}
+
+.column, body {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+nav {
+  height: 400px;
+  padding: 0;
+  justify-content: space-around;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  background-color: #fbff09;
+}
+nav .active {
+  background-color: #1ea71e;
+}
+
+.dbox {
+  background-color: #228B22;
+}
+
+.dbox, .wbox, .nbox {
+  padding: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.wbox {
+  background-color: #FFF;
+  border: 2px black solid;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+
+.item {
+  padding: 2rem;
+}/*# sourceMappingURL=App.css.map */

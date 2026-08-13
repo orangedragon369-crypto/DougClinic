@@ -1,0 +1,93 @@
+@use "var.scss";
+
+body, #root{
+    height: 100vh;
+    margin: 0;
+    background: var.$primary-color;
+}
+
+header{
+    background:  url("");
+    height: 35vh;
+}
+
+main{
+    min-height: 55vh;
+}
+
+footer{
+    min-height: 10vh;
+    bottom: 0;
+}
+
+footer, .second{
+    background: var.$second-color;
+}
+
+footer, .second, .between{
+    justify-content: space-between;
+}
+
+footer, .second, nav, .no-margin{
+    margin: 0;
+    padding: 10px;
+}
+
+.column, .row, body{
+    display: flex;
+}
+
+.column, body{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+nav{
+    height: 400px;
+    padding: 0;
+    justify-content: space-around;
+
+    a{
+        color: var.$text-two;
+        text-decoration: none;;
+        padding: 10px;
+
+        &:hover{
+            background-color: var.$highlight;
+        }
+    }
+
+    .active{
+        background-color: var.$extra;
+    }
+}
+
+.dbox{
+    background-color: var.$second-color;
+}
+
+.dbox, .wbox, .nbox{
+    padding: 5px;
+    height: fit-content;
+}
+
+.wbox{
+    background-color: var.$text-one;
+    border: 2px black solid;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(100px, 200px) 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+    padding-right: 2rem;
+}
+  
+.item {
+  padding: 2rem;
+}
