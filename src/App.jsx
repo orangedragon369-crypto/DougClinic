@@ -13,7 +13,7 @@ export default function App(){
         <main>
         <h2 className="row second"><span>Ludington Pimary Care</span><span>Phone: (505) 730 - 9895</span><span>Email: Doug.Ludington@gmail.com</span></h2>
         <div className="container"> 
-            <Nav baseUrl={baseUrl}></Nav>
+            <Nav></Nav>
             <div className='item'><Routes>
                 <Route path={"/"} element={<ContentD content={[["test p 1"], ["test p 2"]]} row={false}/>} />
                 <Route path={"/how-it-works"} element={<ContentN content={[["test p 1"], ["test p 2"]]} row={false}/>} />
