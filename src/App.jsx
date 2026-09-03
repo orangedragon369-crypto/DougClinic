@@ -6,10 +6,12 @@ import Footer from './const-elements/footer/footer';
 import Calendar from './content-pieces/calendar/calendar';
 import DougDetails from './content-pieces/doug';
 import { Route, Routes } from 'react-router-dom';
+import { Auth } from './components/auth';
 
 export default function App(){
     return(<>
         <Header thumbNail={0}/>
+        <Auth></Auth>
         <main>
         <h2 className="row second"><span>Ludington Pimary Care</span><span>Phone: (505) 730 - 9895</span><span>Email: Doug.Ludington@gmail.com</span></h2>
         <div className="container"> 
